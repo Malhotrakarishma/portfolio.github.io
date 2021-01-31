@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- <link  rel=¨stylesheet¨ href="css/index.css" >   -->
+    <!-- <meta charset = "UTF-8"> -->
+ <!-- <title>externalStyle.html</title> -->
+ <link rel = "stylesheet"
+   type = "text/css"
+   href = "css/index.css" />
+   <!-- <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script> -->
+   <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+ 
+
+</head>
+<body>
+    <div class="checkFloat">
+        <div class="leftfloat">
+         <h3> PORTFOLIO</h3>
+            </div>
+            <div class="rightfloat">
+               <ul class="ul">
+              <a id="link" href="#">HOME </a>
+               <a id="link" href="#">ABOUT </a>
+               <a href="skill.html">SKILLS </a>
+               <a href="#editing">CONTACT </a>
+               </ul>
+        </div>
+    </div>
+    <div class="main">
+        <div class="title">
+            <h1> <li>Hello!I AM KARISHMA MALHOTRA</li>
+                <li>UI Developer</li></h1>
+                <h2>
+                <ul><a href="img/KARISHMA_MALHOTRA_Developer - MCA.pdf">VIEW RESUME </a>
+                </ul>
+            </h2>
+           
+            <!-- <div class="testing">
+                <p>fhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+                 <img src="img/background.jpg"/> -->
+                <!-- </p> -->
+            </div> 
+        </div>
+        <div class="Footer">
+            Footer
+        </div>
+        
+        <script type="text/javascript" language="javascript">
+            //   $(document).ready(function (){
+            //       $('#link').on('click',function(){
+            //         alert("I am a pop up ! ");
+            //       });
+            //     });
+              
+            var $aboutTop = $('.title').offset().top;
+            $(document).ready(function (){
+                $('#link').click(function() {
+                            $('html, body').animate({scrollTop:$aboutTop}, 40);
+                        });
+                    });
+            </script>
+</body>
+</html>
