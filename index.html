@@ -20,9 +20,9 @@
             <div class="rightfloat">
                <ul class="ul">
               <a id="link" href="#">HOME </a>
-               <a id="link" href="#">ABOUT </a>
+               <a href="#about">ABOUT </a>
                <a href="skill.html">SKILLS </a>
-               <a href="#editing">CONTACT </a>
+               <a href="#contact">CONTACT </a>
                </ul>
         </div>
     </div>
@@ -34,16 +34,13 @@
                 <ul><a href="img/KARISHMA_MALHOTRA_Developer - MCA.pdf" target="_blank">VIEW RESUME </a>
                 </ul>
             </h2>
-           
-            <!-- <div class="testing">
-                <p>fhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
-                 <img src="img/background.jpg"/> -->
-                <!-- </p> -->
             </div> 
         </div>
+        <section id ="about" class="section1">ABOUT</section>
+        <section id ="contact" class="section2">CONTACT</section>
         <div class="Footer">
             Created By KARISHMA
-        </div>
+        
         
         <script type="text/javascript" language="javascript">
             //   $(document).ready(function (){
@@ -54,7 +51,7 @@
               
             var $aboutTop = $('.title').offset().top;
             $(document).ready(function (){
-                $('#link').click(function() {
+                $('#link','#about').click(function() {
                             $('html, body').animate({scrollTop:$aboutTop}, 40);
                         });
                     });
