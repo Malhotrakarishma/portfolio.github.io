@@ -12,7 +12,7 @@ body{
     background-position: center;
 }
 .title{
-    position: absolute;
+    position:absolute;
     /* //bring in centre */
     top: 50%;
     left:50%;
@@ -42,6 +42,7 @@ border-radius: 20px;
 background-color: rgb(194, 228, 233);
 border-color: white;
 margin-top: 5px;
+position: absolute;
 
 }
 .checkFloat
@@ -61,7 +62,7 @@ margin-top: 5px;
     text-align: center;
     color: rgb(207, 16, 112);
     float:left;
-    font-size: 20px;
+  
 }
 .rightfloat
 {
@@ -226,8 +227,34 @@ About me and contact us details */
 {
 font-size: 30px;
 display: flex;
-min-height: 100vh;
 justify-content: center;
 color:#E91E63;
 font-weight: 700;
+}
+
+/* .block{
+    height:75vh;
+    width: 30%;
+    top:20%;
+    left:20%;
+    background: rgba(0,0,0,.6);
+    transform: translate(-50%,-50%);
+    background-position: center;
+    justify-content: center;
+    overflow: hidden;
+   
+} */
+
+.img1{
+    
+    border-radius:50px;
+    overflow: hidden; 
+    width:30%;
+    height:30%;
+    margin-top: 60px;
+
+}
+.aboutlines
+{ overflow: hidden;
+    float: right;
 }
