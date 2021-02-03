@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!-- <link  rel=¨stylesheet¨ href="css/index.css" >   -->
-    <!-- <meta charset = "UTF-8"> -->
- <!-- <title>externalStyle.html</title> -->
  <link rel = "stylesheet"
    type = "text/css"
    href = "css/index.css" />
@@ -22,7 +19,8 @@
               <a id="link" href="#">HOME </a>
                <a href="#about">ABOUT </a>
                <a href="skill.html">SKILLS </a>
-               <a href="#contact">CONTACT </a>
+               <a href="#contact">CONTACT</a>
+               <!-- <a href="#" onClick="MyWindow=window.open('#contact');">CONTACT </a> -->
                </ul>
         </div>
     </div>
@@ -36,11 +34,21 @@
             </h2>
             </div> 
         </div>
-        <section id ="about" class="section1">ABOUT</section>
-        <section id ="contact" class="section2">CONTACT</section>
+        <section id ="about" class="section1">
+             ABOUT
+                <!-- <div class="block">ABOUT</div> -->
+                <!-- <div><h3> ABOUT</h3></div> -->
+                <div> 
+                <img src="img/back_2.jpg" alt="about me" class="img1">
+                </div>
+                <div><p class="aboutlines">A paragraph is a series of related sentences developing a central idea, called the topic. Try to think about paragraphs in terms of thematic unity: a paragraph is a sentence or a group of sentences that supports one central, unified idea. Paragraphs add one idea at a time to your broader argument.</p></div>
+        </section>
+        <section id ="contact" class="section2">CONTACT
+            <div> <p>A paragraph is a series of related sentences developing a central idea, called the topic. Try to think about paragraphs in terms of thematic unity: a paragraph is a sentence or a group of sentences that supports one central, unified idea. Paragraphs add one idea at a time to your broader argument.</p></div>
+        </section>
         <div class="Footer">
             Created By KARISHMA
-        
+        </div>
         
         <script type="text/javascript" language="javascript">
             //   $(document).ready(function (){
@@ -52,7 +60,7 @@
             var $aboutTop = $('.title').offset().top;
             $(document).ready(function (){
                 $('#link','#about').click(function() {
-                            $('html, body').animate({scrollTop:$aboutTop}, 40);
+                            $('html, body').animate({scrollTop:$aboutTop}, 1000);
                         });
                     });
             </script>
