@@ -1,68 +1,156 @@
 <!DOCTYPE html>
 <html>
-<head>
- <link rel = "stylesheet"
-   type = "text/css"
-   href = "css/index.css" />
-   <!-- <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script> -->
-   <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
- 
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <!-- <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <!-- <script src="script.js"></script> -->
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <h3>PORTFOLIO</h3>
+      </div>
+      <div class="menu">
+        <ul class="ul">
+          <div id="home"class="link">HOME </div>
+          <div id="skills"class="link">SKILLS </div> 
+          <div id="about" class="link">About  </div>
+          <div id="contactanchor"  class="link">CONTACT</div>
 
-</head>
-<body>
-    <div class="checkFloat">
-        <div class="leftfloat">
-         <h3> PORTFOLIO</h3>
-            </div>
-            <div class="rightfloat">
-               <ul class="ul">
-              <a id="link" href="#">HOME </a>
-               <a href="#about">ABOUT </a>
-               <a href="skill.html">SKILLS </a>
-               <a href="#contact">CONTACT</a>
-               <!-- <a href="#" onClick="MyWindow=window.open('#contact');">CONTACT </a> -->
-               </ul>
-        </div>
-    </div>
+        </ul>
+      </div>
+    </header>
     <div class="main">
-        <div class="title">
-            <h1> <li>Hello!I AM KARISHMA MALHOTRA</li>
-                <li>UI Developer</li></h1>
-                <h2>
-                <ul><a href="img/KARISHMA_MALHOTRA_Developer - MCA.pdf" target="_blank">VIEW RESUME </a>
-                </ul>
-            </h2>
-            </div> 
-        </div>
-        <section id ="about" class="section1">
-             ABOUT
-                <!-- <div class="block">ABOUT</div> -->
-                <!-- <div><h3> ABOUT</h3></div> -->
-                <div> 
-                <img src="img/back_2.jpg" alt="about me" class="img1">
-                </div>
-                <div><p class="aboutlines">A paragraph is a series of related sentences developing a central idea, called the topic. Try to think about paragraphs in terms of thematic unity: a paragraph is a sentence or a group of sentences that supports one central, unified idea. Paragraphs add one idea at a time to your broader argument.</p></div>
-        </section>
-        <section id ="contact" class="section2">CONTACT
-            <div> <p>A paragraph is a series of related sentences developing a central idea, called the topic. Try to think about paragraphs in terms of thematic unity: a paragraph is a sentence or a group of sentences that supports one central, unified idea. Paragraphs add one idea at a time to your broader argument.</p></div>
-        </section>
-        <div class="Footer">
-            Created By KARISHMA
-        </div>
-        
-        <script type="text/javascript" language="javascript">
-            //   $(document).ready(function (){
-            //       $('#link').on('click',function(){
-            //         alert("I am a pop up ! ");
-            //       });
-            //     });
-              
-            var $aboutTop = $('.title').offset().top;
-            $(document).ready(function (){
-                $('#link','#about').click(function() {
-                            $('html, body').animate({scrollTop:$aboutTop}, 1000);
-                        });
-                    });
-            </script>
-</body>
+      <div class="title">
+        <h1>
+          <li>Hello!I AM KARISHMA MALHOTRA</li>
+          <li>UI Developer</li>
+        </h1>
+        <h2>
+          <ul>
+            <a href="img/KARISHMA_MALHOTRA_Developer - MCA.pdf" target="_blank"
+              >VIEW RESUME
+            </a>
+          </ul>
+        </h2>
+      </div>
+    </div>
+<section  id="skill_id"class="skills_section">
+    <div class="section1">
+        MY SKILLS
+   </div>
+   <div class="image">
+   <div class ="container">
+       <h2>HTML</h2>
+       <span class="bar">
+           <span class="fill" id="html1">
+          </span>
+       </span>
+       <h2>CSS</h2>
+       <span class="bar">
+           <span class="fill" id="css">
+          </span>
+       </span>  <h2>JAVASCRIPT</h2>
+       <span class="bar">
+           <span class="fill" id="javascript">
+          </span>
+       </span>  <h2>JQUERY</h2>
+       <span class="bar">
+           <span class="fill" id="jquery">
+          </span>
+       </span>  <h2>REACT</h2>
+       <span class="bar">
+           <span class="fill" id="react">
+          </span>
+       </span>  <h2>REDUX</h2>
+       <span class="bar">
+           <span class="fill" id="redux">
+          </span>
+       </span>
+   </span>  <h2>MYSQL</h2>
+   <span class="bar">
+       <span class="fill" id="mysql">
+      </span>
+   </span>
+</span>  <h2>AZURE FUNDAMENTALS</h2>
+<span class="bar">
+   <span class="fill" id="azure">
+  </span>
+</span>
+   </div>
+   </div>
+</div>
+</section>
+
+    <section id="about-content" class="section1">
+      ABOUT
+      <!-- <div class="block">ABOUT</div> -->
+      <!-- <div><h3> ABOUT</h3></div> -->
+      <div>
+        <img src="img/back_2.jpg" alt="about me" class="img1" />
+      </div>
+      <div>
+        <p class="aboutlines">
+          A paragraph is a series of related sentences developing a central
+          idea, called the topic. Try to think about paragraphs in terms of
+          thematic unity: a paragraph is a sentence or a group of sentences that
+          supports one central, unified idea. Paragraphs add one idea at a time
+          to your broader argument.
+        </p>
+      </div>
+    </section>
+    <section id="contact" class="popup">
+          <div class="popupcontent">
+        <h3>CONTACT</h3>
+        <img src="img/images.png" alt="close" class="close" />
+        <form action="" class="form">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            <label for="email">Email ID </label>
+            <input type="text" id="email" name="lastname" placeholder="@.com">
+            <input type="submit" value="Submit">
+          </form>
+      </div>
+    </section>
+    <div class="Footer">Created By KARISHMA</div>
+
+    <script type="text/javascript" language="javascript">
+      //   $(document).ready(function (){
+      //       $('#link').on('click',function(){
+      //         alert("I am a pop up ! ");
+      //       });
+      //     });
+
+      var $homeTop = $(".menu").offset().top;
+      $(document).ready(function () {
+        $("#home").click(function () {
+          $("html, body").animate({ scrollTop: $homeTop }, 0);
+        });
+      });
+
+      var $aboutTop = $("#about-content").offset().top;
+      $(document).ready(function () {
+        $("#about").click(function () {
+          $("html, body").animate({ scrollTop: $aboutTop }, 1000);
+        });
+      });
+      var $skillTop = $("#skill_id").offset().top;
+      $(document).ready(function () {
+        $("#skills").click(function () {
+          $("html, body").animate({ scrollTop: $skillTop }, 3500);
+        });
+      });
+
+    
+      $("#contactanchor").click(function () {
+        $(".popup").show();
+      });
+      $(".close").click(function () {
+        $(".popup").hide();
+      });
+    </script>
+  </body>
 </html>
