@@ -1,235 +1,222 @@
-
-body{
-    margin: 0px;
-    padding: 0px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    scroll-behavior: smooth;
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  scroll-behavior: smooth;
 }
 .main {
-    background-image: url("../img/back_3.jpg");
-    background-size: cover;
-    height: 100vh;
-    background-position: center;
+  background-image: url("../img/back_3.jpg");
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
 }
-.title{
-    position:absolute;
-    /* //bring in centre */
-    top: 50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    
+.title {
+  position: absolute;
+  /* //bring in centre */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-.title h1{
-    opacity: 0.5px;
-    font-size:40px;
-    color: white;  
+.title h1 {
+  opacity: 0.5px;
+  font-size: 40px;
+  color: white;
 }
-.title h1:hover{
-    color: rgb(24, 22, 22);
+.title h1:hover {
+  color: rgb(24, 22, 22);
 }
 
-h1 li{
-    list-style: none;
+h1 li {
+  list-style: none;
 }
-h2 ul a{
-margin-right: 50px;
-font-size:15px;
-color:rgb(124, 5, 100);
-text-decoration: none;
-font-size: 30px;
-border-style: solid;
-border-radius: 20px;
-background-color: rgb(194, 228, 233);
-border-color: white;
-margin-top: 5px;
-position: absolute;
-
-}
-.checkFloat
-{
-   width: 100%; 
-   height: 100%;
-   color: rgb(0, 0, 0);
-   overflow: hidden;
-   position: fixed;
-   top:0;
-}
-.leftfloat
-{
-    width:30%;
-    line-height:80px ;
-    background-color: #000000;
-    text-align: center;
-    color: rgb(207, 16, 112);
-    float:left;
-  
-}
-.rightfloat
-{
-    width:70%;
-    line-height:80px ;
-    background-color: #000000;
-    text-align: center;
-    float:right
-}
-.ul a{
-  margin-right:25px;
+h2 ul a {
+  margin-right: 50px;
+  font-size: 15px;
+  color: rgb(124, 5, 100);
   text-decoration: none;
-  color:whitesmoke;
-  
-  
+  font-size: 30px;
+  border-style: solid;
+  border-radius: 20px;
+  background-color: rgb(194, 228, 233);
+  border-color: white;
+  margin-top: 5px;
+  position: absolute;
 }
- .Footer{
-    font-size: 20px;
-    line-height: 40px;
-    color: #fff;
-    background: #000000;
-    text-align: center; 
-  
+header.header {
+  background: rgb(0, 0, 0);
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-transform: uppercase;
+}
+.logo {
+  margin-left: 100px;
+  color: rgb(207, 16, 112);
+  float: left;
+}
+.menu {
+  background-color: #000000;
+  text-align: center;
+  float: right;
+  margin-right: 100px;
+}
+.ul .link {
+  margin-right: 25px;
+  text-decoration: none;
+  color: whitesmoke;
+  display: inline-block;
+}
+.Footer {
+  font-size: 20px;
+  line-height: 40px;
+  color: #fff;
+  background: #000000;
+  text-align: center;
 }
 /* skill css */
-.Goback{
-float: left;
-font-size: 25px;
+.Goback {
+  float: left;
+  font-size: 25px;
 }
-.image{
-    background-image: url("../img/white.jpg");
-    background-size: cover;
-    height: 100%;
-    background-position: center;
-    overflow: hidden;
+.image {
+  background-image: url("../img/white.jpg");
+  background-size: cover;
+  height: 100%;
+  background-position: center;
+  overflow: hidden;
 }
-.container{
-    width: 800px;
-    margin: 150Px ;
-    text-transform: uppercase;
-    letter-spacing: 0.3px;
-    color:rgb(192, 53, 106);
-    font-size: 20px;
-    
+.container {
+  width: 800px;
+  margin: 150px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  color: rgb(192, 53, 106);
+  font-size: 20px;
 }
-.bar{
-    height: 1px;
-    width: 100%;
-    border-left: 3px solid #10283b;
-    border-right: 3px solid #10283b;
-    border-radius: 5px;
-    margin:20px;
-    display:block;
-    padding :3px;
+.bar {
+  height: 1px;
+  width: 100%;
+  border-left: 3px solid #10283b;
+  border-right: 3px solid #10283b;
+  border-radius: 5px;
+  margin: 20px;
+  display: block;
+  padding: 3px;
 }
-.fill
-{
-    height: 1px;
-    background-color:#10283b ;
-    border-radius: 2px;
-    display: block;
-    box-shadow: 0 0 5px;
+.fill {
+  height: 1px;
+  background-color: #10283b;
+  border-radius: 2px;
+  display: block;
+  box-shadow: 0 0 5px;
 }
-#html1{
-    width:80%;
-    animation: html1 2s;
+#html1 {
+  width: 80%;
+  animation: html1 2s;
 }
-#css{
-    width:70%;
-    animation: css 2s;
+#css {
+  width: 70%;
+  animation: css 2s;
 }
-#javascript{
-    width:50%;
-    animation: javascript 2s;
+#javascript {
+  width: 50%;
+  animation: javascript 2s;
 }
-#jquery{
-    width:70%;
-    animation: jquery 2s;
+#jquery {
+  width: 70%;
+  animation: jquery 2s;
 }
-#react{
-    width:70%;
-    animation: react 2s;
+#react {
+  width: 70%;
+  animation: react 2s;
 }
-#redux{
-    width:70%;
-    animation: redux 2s;
+#redux {
+  width: 70%;
+  animation: redux 2s;
 }
-#mysql{
-    width:75%;
-    animation: mysql 2s;
+#mysql {
+  width: 75%;
+  animation: mysql 2s;
 }
-#azure{
-    width:50%;
-    animation:azure 2s;
+#azure {
+  width: 50%;
+  animation: azure 2s;
 }
-@keyframes html1{
-    0%{
-        width:0;
-    }
-    100%{
-        width:80%;
-    }
+@keyframes html1 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 80%;
+  }
 }
-@keyframes css{
-    0%{
-        width:0;
-    }
-    100%{
-        width:80%;
-    }
+@keyframes css {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 80%;
+  }
 }
-@keyframes javascript{
-    0%{
-        width:0;
-    }
-    100%{
-        width:80%;
-    }
+@keyframes javascript {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 80%;
+  }
 }
-@keyframes jquery{
-    0%{
-        width:0;
-    }
-    100%{
-        width:80%;
-    }
+@keyframes jquery {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 80%;
+  }
 }
-@keyframes react{
-    0%{
-        width:0;
-    }
-    100%{
-        width:80%;
-    }
-}@keyframes redux{
-    0%{
-        width:0;
-    }
-    100%{
-        width:80%;
-    }
+@keyframes react {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 80%;
+  }
 }
-@keyframes mysql{
-    0%{
-        width:0;
-    }
-    100%{
-        width:80%;
-    }
+@keyframes redux {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 80%;
+  }
 }
-@keyframes azure{
-    0%{
-        width:0;
-    }
-    100%{
-        width:80%;
-    }
+@keyframes mysql {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 80%;
+  }
+}
+@keyframes azure {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 80%;
+  }
 }
 /* 
 About me and contact us details */
-.section1,.section2
-{
-font-size: 30px;
-display: flex;
-justify-content: center;
-color:#E91E63;
-font-weight: 700;
+.section1,
+.section2 {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  color: #e91e63;
+  font-weight: 700;
 }
 
 /* .block{
@@ -245,16 +232,78 @@ font-weight: 700;
    
 } */
 
-.img1{
-    
-    border-radius:50px;
-    overflow: hidden; 
-    width:30%;
-    height:30%;
-    margin-top: 60px;
-
+.img1 {
+  border-radius: 50px;
+  overflow: hidden;
+  width: 30%;
+  height: 30%;
+  margin-top: 60px;
 }
-.aboutlines
-{ overflow: hidden;
-    float: right;
+.aboutlines {
+  overflow: hidden;
+  float: right;
+}
+
+/* contact */
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  height: 600px;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 20px;
+  display: none;
+  z-index: 99990;
+}
+.popupcontent {
+  top: 50%;
+  left: 50%;
+  width: 450px;
+  height: 450px;
+  transform: translate(-50%, -50%);
+  background: rgb(0, 116, 116);
+  border-radius: 20px;
+  position: relative;
+  align-items: center;
+}
+.popupcontent h3{
+    text-align: center;
+}
+.close {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background: white;
+  width: 20px;
+  cursor: pointer;
+}
+label{
+    margin-top: 20px;
+    margin-left: 20px; 
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+input {
+  display: block;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 16px;
+  padding:12px;
+  width: 60%;
+  border: 1px solid grey;
+  border-radius: 7px;
+}
+input[type="submit"]
+{
+    background-color: #8ae48d;
+    color: rgba(255, 255, 255);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 30%;
+  }
 }
