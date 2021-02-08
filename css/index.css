@@ -4,6 +4,7 @@ body {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   scroll-behavior: smooth;
 }
+
 .main {
   background-image: url("../img/back_3.jpg");
   background-size: cover;
@@ -41,16 +42,20 @@ header.header {
 }
 .logo {
   margin-left: 100px;
-  color: rgb(207, 16, 112);
   float: left;
+  color: #e91e63;
+
 }
 .menu {
   background-color: #000000;
   text-align: center;
   float: right;
-  margin-right: 90px;
+  margin-right: 100px;
   transition: all 2s ease;
   font-size: 17px;
+}
+.menu ul{
+  display:none;
 }
 .ul .link {
   margin-right: 25px;
@@ -85,7 +90,7 @@ header.header {
   font-size: 25px;
 }
 .image {
-  background-image: url("../img/white.jpg");
+  background-image: linear-gradient(to bottom right, hsl(330, 8%, 95%), rgb(107, 91, 98));
   background-size: cover;
   height: 100%;
   background-position: center;
@@ -97,7 +102,7 @@ header.header {
   margin: 150px;
   text-transform: uppercase;
   letter-spacing: 0.3px;
-  color: rgb(192, 53, 106);
+  color: rgb(233, 41, 105);
   font-size: 20px;
 }
 .bar {
@@ -244,6 +249,13 @@ About me details */
   height: 30%;
   margin-top: 60px;
 }
+
+.img2 {
+  
+  width: 30%;
+  height: 30%;
+  
+}
 .aboutlines {
   color:#333;
   display: inline-block;
@@ -316,3 +328,10 @@ input[type=submit]
     margin-bottom: 10px;
   }
 
+/* *********************************mobile menu*********** */
+h4 {
+  width: 35px;
+  height: 5px;
+  background-color:white;
+  margin: 6px 50%;
+}
