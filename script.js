@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  var $homeTop = $(".menu").offset().top;
+  var $homeTop = $(".main").offset().top;
   $("#home").click(function () {
     $("html, body").animate({ scrollTop: $homeTop }, 0);
   });
@@ -20,4 +20,10 @@ $(document).ready(function () {
   $(".close").click(function () {
     $(".popup").hide();
   });
+
+
+    $("#icon1").click(function (){
+      $(".menu ul").show();
+  });
+
 });
