@@ -54,8 +54,8 @@ header.header {
   transition: all 2s ease;
   font-size: 17px;
 }
-.menu ul{
-  display:none;
+.icon1{
+  display: none;
 }
 .ul .link {
   margin-right: 25px;
@@ -329,9 +329,49 @@ input[type=submit]
   }
 
 /* *********************************mobile menu*********** */
-h4 {
-  width: 35px;
-  height: 5px;
-  background-color:white;
-  margin: 6px 50%;
+.icon1 {
+   margin-left: 90%;
+    color: white;
+   
 }
+
+
+@media only screen
+and ( max-width:500px){
+  .icon1{
+   display:flex;
+  }
+
+}
+
+ /* .ul.link{
+  /* flex-direction: column;  
+   /* margin-right: 80%; */
+  /* color:white;
+  justify-content: space-evenly; */ 
+
+  /* display:hide;
+
+ } */ 
+ 
+ /* i.hide{
+  display:flex;
+}} */
+
+  /* display:hide;
+ }
+
+  /* .menu .link:hover{
+    cursor: pointer;
+    letter-spacing: 3px;
+    text-decoration: underline;
+    text-decoration-color:wheat ;
+    animation:blinkingText 1.2s linear infinite;
+    
+}
+
+.slide{
+ right:-100%;
+} */ 
+
+
