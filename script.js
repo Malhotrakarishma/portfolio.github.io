@@ -22,8 +22,25 @@ $(document).ready(function () {
   });
 
 
-    $("#icon1").click(function (){
-      $(".menu ul").show();
+  //   $("#open").click(function (){
+  //     $(".ul.link").show();
+  // });
+
+
+  $("#open").click(function (){
+    $(".ul.link").show();
   });
+  // $("#close").click(function (){
+  //   $(".hide").toggle();
+  // });
+
+  // $("#close").click(function (){
+  //   $(".hide").toggle();
+  // });
+  // $("#open").click(function (){
+  //   $(".hide").toggle();
+  // });
+
+  
 
 });
