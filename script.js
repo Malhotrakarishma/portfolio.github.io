@@ -20,15 +20,8 @@ $(document).ready(function () {
   $(".close").click(function () {
     $(".popup").hide();
   });
-
-
-  //   $("#open").click(function (){
-  //     $(".ul.link").show();
-  // });
-
-
   $("#open").click(function (){
-    $(".ul.link").show();
+    $("ul.ul").toggle();
   });
   // $("#close").click(function (){
   //   $(".hide").toggle();
@@ -40,7 +33,5 @@ $(document).ready(function () {
   // $("#open").click(function (){
   //   $(".hide").toggle();
   // });
-
-  
 
 });
