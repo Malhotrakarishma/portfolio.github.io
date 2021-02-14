@@ -92,7 +92,7 @@ header.header {
 .image {
   background-image: linear-gradient(to bottom right, hsl(330, 8%, 95%), rgb(107, 91, 98));
   background-size: cover;
-  height: 100%;
+  /* height: 100%; */
   background-position: center;
   overflow: hidden;
   z-index: 9999;
@@ -339,13 +339,23 @@ input[type=submit]
 
 
 @media only screen
-and ( max-width:500px){
+and ( max-width:767px){
   .icon1{
    display:flex;
   }
   ul.ul{
     display:none;
+    flex-direction: column;  
+    margin-right: 80%; 
+  justify-content: space-evenly;
   }
+  .image{
+   top:0;
+   left:0;
+   right: 0;
+   bottom: 0;
+  }
+  
 
 }
 
