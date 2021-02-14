@@ -330,8 +330,10 @@ input[type=submit]
 
 /* *********************************mobile menu*********** */
 .icon1 {
-   margin-left: 90%;
+   /* margin-left: 90%; */
     color: white;
+    margin-left: 80px;
+ 
    
 }
 
@@ -340,6 +342,9 @@ input[type=submit]
 and ( max-width:500px){
   .icon1{
    display:flex;
+  }
+  ul.ul{
+    display:none;
   }
 
 }
