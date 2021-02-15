@@ -47,6 +47,7 @@ header.header {
   margin-left: 100px;
   float: left;
   color: #e91e63;
+  font-weight: bold;
 
 }
 .menu {
@@ -234,7 +235,8 @@ header.header {
 About me details */
 .section1,
 .section2 {
-  font-size: 30px;
+  font-size: 32px;
+  font-weight: bolder;
   display: flex;
   justify-content: center;
   color: #e91e63;
@@ -261,6 +263,23 @@ div li{
   margin-top: 5px; */
   /* position: fixed 
 /* }    */ 
+
+
+
+ .resume{
+   margin-left:50%; 
+  font-size: 12px;
+  color: rgb(124, 5, 100);
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: bold;
+  border-style: solid;
+  border-radius:15px;
+  background-color: rgb(194, 228, 233);
+  border-color: white;
+  
+ }
+
 
 .img1 {
   border-radius: 50px;
@@ -297,8 +316,8 @@ div li{
 .popupcontent {
   top: 50%;
   left: 50%;
-  width: 550px;
-  height: 550px;
+  /* width: 550px;
+  height: 550px; */
   transform: translate(-50%, -50%);
   background-image: linear-gradient(to bottom right, rgb(255, 0, 119), rgb(112, 112, 78));
   border-radius: 20px;
@@ -322,7 +341,7 @@ label{
     margin-left: 20px; 
     font-size: 20px;
     margin-bottom: 16px;
-    color: rgb(124, 110, 65);
+    color: rgb(197, 156, 21);
 }
 input[type=text],textarea {
   display: block;
