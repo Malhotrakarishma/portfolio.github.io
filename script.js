@@ -1,4 +1,7 @@
 $(document).ready(function () {
+  $("#open").click(function (){
+    $("ul.ul").toggle();
+  });
   var $homeTop = $(".main").offset().top;
   $("#home").click(function () {
     $("html, body").animate({ scrollTop: $homeTop }, 0);
@@ -6,7 +9,9 @@ $(document).ready(function () {
 
   var $aboutTop = $("#about-content").offset().top;
   $("#about").click(function () {
-    $("html, body").animate({ scrollTop: $aboutTop }, 1000);
+    console.log ("about Height: " + $aboutTop);
+    console.log ("header Height: " + $homeTop);
+    $("html, body").animate({scrollTop: $aboutTop+20}, 1000);
   });
 
   var $skillTop = $("#skill_id").offset().top;
@@ -17,12 +22,11 @@ $(document).ready(function () {
   $("#contactanchor").click(function () {
     $(".popup").show();
   });
+
   $(".close").click(function () {
     $(".popup").hide();
   });
-  $("#open").click(function (){
-    $("ul.ul").toggle();
-  });
+ 
   // $("#close").click(function (){
   //   $(".hide").toggle();
   // });
