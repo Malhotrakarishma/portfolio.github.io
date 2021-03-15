@@ -1,6 +1,6 @@
 $(document).ready(function () {
   $("#open").click(function (){
-    $("ul.ul").toggle();
+    $("#menu-mobile").slideToggle(0);
   });
   var $homeTop = $(".main").offset().top;
   $("#home").click(function () {
@@ -12,12 +12,12 @@ $(document).ready(function () {
     console.log ("about Height: " + $aboutTop);
     console.log ("header Height: " + $homeTop);
     console.log ("header Height: " + $skillTop);
-    $("html, body").animate({scrollTop: $aboutTop-60}, 1000);
+    $("html, body").animate({scrollTop: $aboutTop- 60}, 1000);
   });
 
   var $skillTop = $("#skill_id").offset().top;
   $("#skills").click(function () {
-    $("html, body").animate({ scrollTop: $skillTop-60}, 1000);
+    $("html, body").animate({ scrollTop: $skillTop-40}, 1000);
   });
 
   $("#contactanchor").click(function () {
