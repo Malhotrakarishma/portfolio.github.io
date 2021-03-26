@@ -1,5 +1,7 @@
+import { saveEnquiry } from './modules/saveFormDataToDB.js';
+
 $(document).ready(function () {
-  $("#open").click(function (){
+  $("#open").click(function () {
     $("#menu-mobile").slideToggle(0);
   });
   var $homeTop = $(".main").offset().top;
@@ -27,6 +29,20 @@ $(document).ready(function () {
   $(".close").click(function () {
     $(".popup").hide();
   });
+
+  $("form").submit( ( $event ) => {
+    $event.preventDefault();
+
+    const data = new FormData($event.target);
+    const value = Object.fromEntries(data.entries());
+    
+    saveEnquiry(value).then((res) => {
+      console.log(res);
+      $(".close").click();
+    }).catch((err) => {
+      console.log(err);
+    });
+  })
  
   // $("#close").click(function (){
   //   $(".hide").toggle();

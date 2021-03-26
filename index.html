@@ -18,7 +18,7 @@
     />
     <link rel="stylesheet" type="text/css" href="css/index.css" />
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-    <script src="script.js"></script>
+    <script type="module" src="script.js"></script>
   </head>
   <body>
     <!-- *************************mobile view********* -->
@@ -127,26 +127,25 @@
         <h3>CONTACT</h3>
         <div class="close">X</div>
 
-        <form action="" class="form">
+        <form class="form">
           <input
             type="text"
             id="fname"
-            name="firstname"
+            name="firstName"
             placeholder="Your  Full Name.."
           />
           <input
             type="text"
             id="lname"
-            name="mobileno"
+            name="mobileNo"
             placeholder="Your Mobile Number.."
-            pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
           />
           <input
             type="text"
             id="email"
-            name="lastname"
+            name="emailId"
             placeholder="@.com"
-            pattern=".+@globex.com"
           />
           <textarea
             id="message"
