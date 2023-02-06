@@ -10,6 +10,10 @@ body {
   /* background-image: linear-gradient(to bottom right, hsl(330, 84%, 63%), rgb(107, 91, 98)); */
   background-size: cover;
   height: 100vh;
+  background-position: center;
+  max-width: 100%;
+  width: 100%;
+  padding: 50px;
   /* background-position: top; */
 }
 .title {
@@ -137,6 +141,7 @@ header.header {
   overflow: hidden;
   z-index: 9999;
   padding: 0 20px;
+  margin-top: 60px;
 }
 .container {
   margin: 0px auto;
@@ -319,7 +324,7 @@ div li {
   /* color:purple;
   text-align: center;
   margin: 0; */
-    padding: 13px 45px;
+    padding: 13px;
     border-style: solid;
     border-width: 2px;
     border-color: #fff;
