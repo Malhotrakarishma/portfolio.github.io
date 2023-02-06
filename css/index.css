@@ -21,14 +21,18 @@ body {
   text-align: center;
 }
 .title h1 {
-  opacity: 0.5px;
   font-size: 36px;
   color: #fff;
   font-weight: bolder;
+  font-family: yorkten-slab-extended, sans-serif;
+  transform: translate3d(0px, -30px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); 
+  transform-style: preserve-3d; 
+  opacity: 1;
+  
 }
 
 .red {
-  color: rgb(230, 67, 75);
+  color: rgb(230, 143, 67);
 }
 
 h1 li {
@@ -49,7 +53,7 @@ header.header {
   float: left;
   color: #e91e63;
   font-weight: bold;
-  font-family: "Indie Flower", cursive;
+  font-family:"yorkten-slab-extended, sans-serif";
   font-size: 40px;
   line-height: 45px;
   margin: 0;
@@ -157,6 +161,32 @@ header.header {
   border-radius: 2px;
   display: block;
   box-shadow: 0 0 5px;
+}
+.projects-wrap {
+  display: flex;
+  gap:50px;
+  padding: 80px;
+  
+}
+.tiles__card {
+  position: relative;
+  flex: 1 1 300px;
+  height: 200px;
+}
+.card-img {
+  width: 100%;
+  height: 200px;
+}
+
+.heading-topleft {
+  position: relative;
+  font-size: 18px;
+  margin: 0;
+  font-weight: 500;
+  line-height: 22px;
+  text-decoration: none;
+  color:#2b0050;
+  padding-top: 10px;
 }
 #html1 {
   width: 80%;
@@ -268,6 +298,7 @@ About me details */
   font-weight: 700;
   text-align: center;
   z-index: 99990;
+  font-family: "fangsong";
 }
 div li {
   display: inline-block;
@@ -277,17 +308,28 @@ div li {
 }
 
 .resume {
-  color: #fff;
+  /* color: #fff;
   text-decoration: none;
   font-size: 28px;
   font-weight: bold;
   border-style: solid;
   border-radius: 15px;
   border-color: white;
-  background: #000;
+  background: #000; */
+  /* color:purple;
   text-align: center;
-  margin: 0;
-  
+  margin: 0; */
+    padding: 13px 45px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #fff;
+    background-color: #3700ff;
+    color:#fff;
+    text-decoration: none;
+    background-image: linear-gradient(180deg, #7200ff, #2b0050);
+    box-shadow: 4px 4px 15px -5px #000;
+    opacity: 1;
+    border-radius: 50px;
 }
 
 .img1 {
