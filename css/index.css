@@ -472,6 +472,10 @@ input[type="submit"]:hover{
   #open {
     margin-left: 0;
   }
+  .popupcontent {
+    width: 60%;
+  
+  }
 
   #menu-mobile {
     float: none;
