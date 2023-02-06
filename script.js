@@ -16,6 +16,10 @@ $(document).ready(function () {
     console.log ("header Height: " + $skillTop);
     $("html, body").animate({scrollTop: $aboutTop- 60}, 1000);
   });
+  var $projectTop = $("#projects").offset().top;
+  $("#work").click(function () {
+    $("html, body").animate({ scrollTop: $projectTop-40}, 1000);
+  });
 
   var $skillTop = $("#skill_id").offset().top;
   $("#skills").click(function () {
